@@ -1,4 +1,4 @@
-" Small default height for CommandT
+let g:CommandTMatchWindowReverse=0
 let g:CommandTMaxHeight=20
 let g:CommandTMaxFiles=20000
 
