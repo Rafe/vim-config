@@ -151,3 +151,9 @@
 [submodule "bundle/typescript-vim"]
 	path = bundle/typescript-vim
 	url = https://github.com/leafgarland/typescript-vim.git
+[submodule "bundle/vim-indentwise"]
+	path = bundle/vim-indentwise
+	url = https://github.com/jeetsukumaran/vim-indentwise.git
+[submodule "bundle/vim-indent-object"]
+	path = bundle/vim-indent-object
+	url = https://github.com/michaeljsmith/vim-indent-object.git
