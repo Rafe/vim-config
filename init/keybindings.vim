@@ -21,14 +21,16 @@ map Y           y$
 nmap <leader>s  :%s/
 vmap <leader>s  :s/
 
+vmap <leader>so :sort<CR>
+
 " Split screen
 map <leader>v   :vsp<CR>
 
 " Move between screens
-map <leader>w   ^Ww
 map <leader>=   ^W=
 map <leader>j   ^Wj
 map <leader>k   ^Wk
+map <leader>w   ^Ww
 
 " Open .vimrc file in new tab. Think Command + , [Preferences...] but with Shift.
 map <D-<>       :tabedit ~/.vimrc<CR>
