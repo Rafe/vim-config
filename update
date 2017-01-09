@@ -10,3 +10,5 @@ git pull --ff-only
 git submodule sync
 git submodule update --init --recursive
 git ls-files -z --others --exclude-standard bundle | xargs -0 rm -rf
+[[ -e "$HOME/.vimrc" ]] || ln -s "$ROOT/vimrc" ~/.vimrc
+[[ -e "$HOME/.gvimrc" ]] || ln -s "$ROOT/gvimrc" ~/.gvimrc
