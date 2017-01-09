@@ -8,23 +8,22 @@ function! StripTrailingWhitespace()
   call setpos('.', save_cursor)
 endfunction
 
-" Strip whitespace for code files
 autocmd BufWritePre *.m,*.h,*.c,*.mm,*.cpp,*.hpp call StripTrailingWhitespace()
 autocmd BufWritePre *.rb,*.yml,*.js,*.jsx,*.css,*.less,*.sass,*.scss,*.html,*.xml,*.erb,*.haml call StripTrailingWhitespace()
 autocmd BufWritePre *.java,*.php,*.feature call StripTrailingWhitespace()
 
-" Highlight JSON files as javascript
+" JSON
 autocmd BufRead,BufNewFile *.json set filetype=javascript
 
-" Highlight Jasmine fixture files as HTML
-autocmd BufRead,BufNewFile *.jasmine_fixture set filetype=html
-
-" Insert ' => '
+" Ruby
 autocmd FileType ruby imap  <Space>=><Space>
 
-" Open all folds in Markdown.
+" Markdown
 autocmd FileType mkd normal zR
 
+" SQL
 autocmd FileType sql set filetype=sqlanywhere
+let g:sql_type_default="postgresql"
 
+" Prose-like
 autocmd FileType gitcommit,mail,mkd,text set spell

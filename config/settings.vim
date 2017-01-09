@@ -1,8 +1,5 @@
-set guifont=Menlo:h16
-set guioptions-=T               " Remove GUI toolbar
-set guioptions-=e               " Use text tab bar, not GUI
-set guioptions-=rL              " Remove scrollbars
-set guicursor=a:blinkon0        " Turn off the blinking cursor
+syntax on
+filetype plugin indent on
 
 set notimeout                   " No command timeout
 set showcmd                     " Show typed command prefixes while waiting for operator
@@ -34,9 +31,6 @@ set hidden                      " Allow hidden, unsaved buffers
 set splitright                  " Add new windows towards the right
 set splitbelow                  " ... and bottom
 set scrolloff=3                 " Scroll when the cursor is 3 lines from edge
-if has("gui_running")
-  set cursorline                " Highlight current line
-end
 
 set laststatus=2                " Always show statusline
 
@@ -62,14 +56,19 @@ nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>""
 set autowriteall                " Save when doing various buffer-switching things.
 autocmd BufLeave,FocusLost * silent! wall  " Save anytime we leave a buffer or MacVim loses focus.
 
-let g:sql_type_default="postgresql"
+set background=dark
+colorscheme solarized
 
 if $TERM == 'screen-256color'
   set t_RV=[>c
 endif
 
-" Turn off ri tooltips that don't work with Ruby 1.9 yet
-" http://code.google.com/p/macvim/issues/detail?id=342
-if has("gui_running")
-  set noballooneval
+if !has("gui_running")
+  " Makes Command-T work again with arrow keys.  Not clear why.
+  map <Esc>[A <Up>
+end
+
+if &term == "screen-256color"
+  let &t_SI = "\<Esc>[3 q"
+  let &t_EI = "\<Esc>[0 q"
 endif
