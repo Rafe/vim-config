@@ -1,1 +1,1 @@
-runtime plugins/*.vim
+runtime! config/plugins/**.vim
