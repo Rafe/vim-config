@@ -19,11 +19,11 @@ autocmd BufRead,BufNewFile *.json set filetype=javascript
 autocmd FileType ruby imap  <Space>=><Space>
 
 " Markdown
-autocmd FileType mkd normal zR
+autocmd FileType markdown,mkd normal zR
 
 " SQL
 autocmd FileType sql set filetype=sqlanywhere
 let g:sql_type_default="postgresql"
 
 " Prose-like
-autocmd FileType gitcommit,mail,mkd,text set spell
+autocmd FileType gitcommit,mail,markdown,mkd,text set spell
