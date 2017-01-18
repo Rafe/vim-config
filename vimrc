@@ -14,7 +14,6 @@
 " Instead, add it to one of the files in .vim/init, or create a new one.
 
 source ~/.vim/config/init.vim
-runtime ~/.vim/custom-cmds/*.vim
 source ~/.vim/config/settings.vim
 source ~/.vim/config/autocorrect.vim
 source ~/.vim/config/filetypes.vim
