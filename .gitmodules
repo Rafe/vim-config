@@ -139,9 +139,6 @@
 [submodule "bundle/vim-rspec"]
 	path = bundle/vim-rspec
 	url = https://github.com/thoughtbot/vim-rspec.git
-[submodule "bundle/tslime.vim/plugin"]
-	path = bundle/tslime.vim/plugin
-	url = https://github.com/Casecommons/tslime.vim.git
 [submodule "bundle/ag.vim"]
 	path = bundle/ag.vim
 	url = https://github.com/rking/ag.vim.git
@@ -157,3 +154,12 @@
 [submodule "bundle/vim-indent-object"]
 	path = bundle/vim-indent-object
 	url = https://github.com/michaeljsmith/vim-indent-object.git
+[submodule "bundle/regreplop"]
+	path = bundle/regreplop
+	url = https://github.com/vim-scripts/regreplop.vim.git
+[submodule "bundle/FuzzyFinder"]
+	path = bundle/FuzzyFinder
+	url = https://github.com/vim-scripts/FuzzyFinder.git
+[submodule "bundle/l9"]
+	path = bundle/l9
+	url = https://github.com/vim-scripts/L9.git
