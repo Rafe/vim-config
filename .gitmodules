@@ -175,3 +175,6 @@
 [submodule "bundle/swift"]
 	path = bundle/swift
 	url = git@github.com:keith/swift.vim.git
+[submodule "bundle/vim-solidity"]
+	path = bundle/vim-solidity
+	url = git@github.com:tomlion/vim-solidity.git
