@@ -28,3 +28,7 @@ let g:sql_type_default="postgresql"
 " Prose-like
 autocmd FileType gitcommit,mail,markdown,mkd,text set spell
 autocmd FileType mail,markdown,mkd,text setlocal wrap linebreak nolist
+
+" set list
+autocmd FileType go set nolist
+autocmd FileType go setlocal shiftwidth=4 tabstop=4
